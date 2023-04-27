@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>made with ❤️ by Sudhanshu Sekhar Sahoo</title>
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <div>
+        <img id="logo" src="weather.png" alt="site logo" />
+        <div class="title">
+          <h1 style="color: white">Weather</h1>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="card" id="hero-card">
+        <div
+          style="
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              font-size: 30px;
+              line-height: normal;
+            "
+          >
+            <span class="temp" id="temp">0</span>
+            <span style="font-weight: bold" id="city-name">&nbsp;</span>
+            <span style="font-size: 18px; color: #888" id="country">India</span>
+          </div>
+          &nbsp;
+          <div class="card">
+            <img style="width: 60px" src="weather.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="card input-cover">
+        <select class="input" id="city">
+          <option selected>Select your city</option>
+        </select>
+        <button class="btn">
+          <img style="height: 24px; width: 24px" src="search.svg" alt="" />
+        </button>
+      </div>
+    </div>
+    <div id="footer">Made with ❤️ by Sudhanshu Sekhar Sahoo</div>
+    <script src="app.js"></script>
+  </body>
+</html>

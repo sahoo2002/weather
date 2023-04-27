@@ -1,0 +1,117 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+}
+
+#navbar {
+  width: 100%;
+  position: fixed;
+  background: #9601da;
+  border-bottom: 1px solid #aaa;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#navbar > div {
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content {
+  line-height: 1.5rem;
+  padding: 10px;
+  padding-top: 60px;
+}
+.card-grp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.card {
+  padding: 15px;
+  margin: 15px;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+}
+
+.temp {
+  font-size: 40px;
+  line-height: 50px;
+}
+.temp::after {
+  font-size: 16px;
+  content: "\00B0""C";
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  color: #aaa;
+}
+.input-cover {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+.input-cover > .input {
+  flex-grow: 1;
+}
+.input {
+  border-radius: 5px;
+  padding: 15px 10px;
+  border: 1px solid #aaa;
+}
+
+.btn {
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #aaa;
+}
+
+#select {
+  position: absolute;
+  background-color: hsl(0, 0%, 86%);
+}
+
+.item {
+  padding: 10px;
+  border-top: 1px solid #aaa;
+}
+.item:first-child {
+  border-top: 1px solid #aaa;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 70px;
+  width: calc(100% - 30px);
+  padding: 10px 0;
+  height: max-content;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#footer{
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #9601da;
+  color: #faebd7;
+}
